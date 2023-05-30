@@ -456,7 +456,7 @@ img {
   .sobre-festival {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 1rem;
+    gap: 1rem;
   }
 }
 .sobre-festival .imagen {
@@ -465,9 +465,15 @@ img {
 
 .contenido-festival {
   padding: 2rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  .contenido-festival {
+    margin-top: 0;
+  }
 }
 .contenido-festival h2 {
   margin-bottom: 2rem;
