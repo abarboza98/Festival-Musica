@@ -1,0 +1,28 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mx;
+
+.sobre-festival{
+    @include mx.tablet{
+        @include mx.grid(2) 
+    }
+    padding: 5rem 0;
+    .imagen{
+        margin:3rem;
+    }
+}
+.contenido-festival{
+    padding: 2rem;
+    //margin:3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+    margin-bottom: 2rem;
+    }
+
+    .fecha{ 
+        color: var.$azul;
+        font-size: 2rem;
+        margin: 0;
+    }
+}
